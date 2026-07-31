@@ -28,7 +28,7 @@ The robotic arm consists of two links connected through revolute joints with a f
 The CAD model developed in previous iterations was imported into ANSYS Workbench, where different multiphysics analyses were performed on the same baseline geometry.
 
 <p align="center">
-<img src="Results/CAD.png" width="600">
+<img src="results/cad.png" width="600">
 </p>
 
 ## Simulation Setup
@@ -73,8 +73,8 @@ Simulate the robotic arm sweeping from **0° to 90° within 0.5 seconds** under 
 ## Results
 
 <p align="center">
-<img src="Results/transient_reaction_force.png" width="450">
-<img src="Results/transient_stress.png" width="450">
+<img src="results/reaction_force_graph.png" height="280">
+<img src="results/peak_dynamic_stress.png" height="280">
 </p>
 
 ### Observation
@@ -101,8 +101,8 @@ Evaluate the impact response of the end-effector when striking a rigid stop at a
 ## Results
 
 <p align="center">
-<img src="Results/impact_stress.png" width="450">
-<img src="Results/impact_plastic_strain.png" width="450">
+<img src="results/impact_stress.png" width="450">
+<img src="results/impact_plastic_strain.png" width="450">
 </p>
 
 ## Key Results
@@ -136,8 +136,9 @@ Estimate fatigue life of the joint shaft under cyclic torque loading using the G
 ## Results
 
 <p align="center">
-<img src="Results/fatigue_life.png" width="450">
-<img src="Results/fatigue_factor_of_safety.png" width="450">
+<img src="results/life.png" width="400">
+                     
+<img src="results/factor_of_safety.png" width="385">
 </p>
 
 ## Key Results
@@ -172,8 +173,8 @@ Evaluate temperature distribution and thermal stresses generated due to motor he
 ## Results
 
 <p align="center">
-<img src="Results/thermal_temperature.png" width="450">
-<img src="Results/thermal_stress.png" width="450">
+<img src="results/temperature.png" height="400">
+<img src="results/thermal_stress.png" height="400">
 </p>
 
 ## Key Results
@@ -208,7 +209,7 @@ Evaluate structural response under random base excitation and determine vibratio
 ## Results
 
 <p align="center">
-<img src="Results/random_vibration_3sigma.png" width="500">
+<img src="results/three_sigma_stress.png" height="400">
 </p>
 
 ## Key Results
@@ -240,7 +241,7 @@ The vibration-induced stress remains below the material yield strength.
 
 # Discussion
 
-The multiphysics assessment demonstrates that the robotic arm design maintains structural integrity under the investigated operating conditions.
+The Multiphysics assessment demonstrates that the robotic arm design maintains structural integrity under the investigated operating conditions.
 
 The highest stress concentrations were observed near constrained regions, particularly during thermal loading. These regions are primarily influenced by boundary condition effects and geometric discontinuities.
 
@@ -266,4 +267,12 @@ The highest stress concentrations were observed near constrained regions, partic
 
 ---
 
-# Repository Structure
+# Files Included
+
+- **ANSYS/** — Complete ANSYS Workbench project file
+- **CAD/** — Original CAD geometry used for simulation
+- **Results/** — Simulation result screenshots and contours
+- **Report/** — Detailed FEA report containing methodology and conclusions
+
+---
+
